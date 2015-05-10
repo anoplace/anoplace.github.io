@@ -1,0 +1,3 @@
+[submodule "themes/anoplace"]
+	path = themes/anoplace
+	url = git@github.com:anoplace/hugo-theme-anoplace.git

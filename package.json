@@ -6,6 +6,10 @@
   "bugs": {
     "url": "https://github.com/anoplace/anoplace.github.io/issues"
   },
+  "dependencies": {
+    "tsd": "^0.6.0",
+    "typescript": "^1.5.0-beta"
+  },
   "homepage": "http://www.ano-place.github.io",
   "keywords": [
     "webpack"

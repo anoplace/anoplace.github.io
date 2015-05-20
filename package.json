@@ -7,10 +7,12 @@
     "url": "https://github.com/anoplace/anoplace.github.io/issues"
   },
   "dependencies": {
+    "node-libs-browser": "^0.5.0",
     "require-dir": "^0.3.0",
     "tsd": "^0.6.0",
     "typescript": "^1.5.0-beta",
-    "typescript-require": "^0.2.8"
+    "typescript-require": "^0.2.8",
+    "webpack": "^1.9.7"
   },
   "homepage": "http://www.ano-place.github.io",
   "keywords": [

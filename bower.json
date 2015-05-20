@@ -5,6 +5,9 @@
   "authors": [
     "yuhki50 <yuhki50@gmail.com>"
   ],
+  "dependencies": {
+    "gumby": "~2.6.4"
+  },
   "homepage": "https://github.com/anoplace/anoplace.github.io",
   "ignore": [
     "**/.*",

@@ -1,0 +1,23 @@
+{
+  "name": "anoplace.github.io",
+  "description": "anoplace corporate website",
+  "version": "0.0.1",
+  "author": "anoplace <info@ano-place.com>",
+  "bugs": {
+    "url": "https://github.com/anoplace/anoplace.github.io/issues"
+  },
+  "homepage": "http://www.ano-place.github.io",
+  "keywords": [
+    "webpack"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anoplace/anoplace.github.io.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "anoplace.github.io",
+  "description": "desc",
+  "version": "0.0.1",
+  "authors": [
+    "yuhki50 <yuhki50@gmail.com>"
+  ],
+  "homepage": "https://github.com/anoplace/anoplace.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "keyword"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "private": true
+}

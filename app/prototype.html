@@ -58,24 +58,26 @@
 <body>
 
 
-<div class="row" style="background:#4abde2;">
-    <h1>anoplace</h1>
+<div class="row">
+    <div class="twelve columns title">
+        <h1>anoplace</h1>
 
-    <h2>Spatial Design and Direction</h2>
+        <h2>Spatial Design and Direction</h2>
 
-    <ul>
-        <li class="skiplink"><a href="#" gumby-goto="[data-target='about']">ABOUT</a></li>
-        <li class="skiplink"><a href="#" gumby-goto="[data-target='work']">WORKS</a></li>
-        <li class="skiplink"><a href="#" gumby-goto="[data-target='contact']">CONTACT</a></li>
-    </ul>
+        <ul class="navi">
+            <li><a href="#" gumby-goto="[data-target='about']">ABOUT</a></li>
+            <li><a href="#" gumby-goto="[data-target='work']">WORKS</a></li>
+            <li><a href="#" gumby-goto="[data-target='contact']">CONTACT</a></li>
+        </ul>
+    </div>
 </div>
 
-<div class="row" data-target="about">
-    <div class="twelve columns" style="background:#41a069;">
+<div class="row">
+    <div class="twelve columns about">
         <div class="six columns">
             <h1>about</h1>
         </div>
-        <div class="six columns">
+        <div class="six columns " style="background: #fff;">
             <div>
                 <h1>SERVICE</h1>
 
@@ -142,35 +144,123 @@
     </div>
 </div>
 
-<div class="row" data-target="work">
-    <div class="twelve columns" style="background:#e46565;">
+<div class="row">
+    <div class="twelve columns work">
         <div class="six columns">
             <h1>work</h1>
         </div>
-        <div class="six columns">
+        <div class="six columns" style="background: #fff;">
             <p>work</p>
         </div>
     </div>
 </div>
 
-<div class="row" data-target="contact">
-    <div class="twelve columns" style="background:#f19149;">
+<div class="row">
+    <div class="twelve columns contact">
         <div class="six columns">
             <h1>contact</h1>
         </div>
-        <div class="six columns">
+        <div class="six columns" style="background: #fff; padding: 2rem;">
             <p>map</p>
             <!--
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.400969191027!2d139.66428025!3d35.667127750000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f313c1ea2cf3%3A0x4846aeb4204aa80f!2z5pel5pysLCDjgJIxNTYtMDA0MSDmnbHkuqzpg73kuJbnlLDosLfljLrlpKfljp_vvJHkuIHnm67vvJXiiJLvvJLvvJIg77yz77yv77yR77yV77yS77yS!5e0!3m2!1sja!2s!4v1432152802161" width="90%" height="20%" frameborder="0" style="border:0;margin:0;"></iframe>
             -->
+
+            <p>anoplace</p>
+
+            <p>156-0041 東京都世田谷区大原1-5-22 SO1522 104号室<br/>
+                JR山手線渋谷駅 東口から徒歩5分<br/>
+                info@ano-place.com<br/>
+            </p>
+
+            <ul>
+                <li class="field">
+                    <label class="inline" for="text1">名前</label>
+                    <input class="text input" id="text1" type="text"/>
+                </li>
+
+                <li class="field">
+                    <label class="inline" for="text2">会社名・学校名</label>
+                    <input class="text input" id="text2" type="text"/>
+                </li>
+
+                <li class="field">
+                    <label class="inline" for="text3">メールアドレス</label>
+                    <input class="email input" id="text3" type="email"/>
+                </li>
+
+                <li class="field">
+                    <label class="inline" for="text4">電話番号</label>
+                    <input class="text input" id="text4" type="text"/>
+                </li>
+
+                <li class="field">
+                    <label class="block" for="text5">お問い合せ内容</label>
+                    <textarea class="input textarea" id="text5" type="text"></textarea>
+                </li>
+            </ul>
+
+
+            <div class="row">
+                <div class="large danger btn"><a href="#">送信する</a></div>
+            </div>
+
+            <div class="row">
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/pages/anoplace/902398226493857?fref=ts"><img src="images/icons/06-facebook.svg" alt="facebook"/></a></li>
+                    <li><a href="https://twitter.com/anoplace"><img src="images/icons/03-twitter.svg" alt="twitter"/></a></li>
+                    <li><a href="#"><img src="images/icons/38-instagram.svg" alt="instagram"/></a></li>
+                    <li><a href="#"><img src="images/icons/18-youtube.svg" alt="youtube"/></a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
+
+<!--
+参考サイト
+http://melaniedaveid.com/
+-->
 
 <style>
     html, body {
         width: 100%;
         height: 100%;
+    }
+
+    div.row {
+        width: 100%;
+        min-width: 100%;
+        padding: 0;
+    }
+
+    div.columns {
+        min-height: 100%;;
+    }
+
+    div.row > div.columns.title {
+        background: #4abde2;
+    }
+
+    div.row > div.columns.about {
+        background: #41a069;
+    }
+
+    div.row > div.columns.work {
+        background: #e46565;
+    }
+
+    div.row > div.columns.contact {
+        background: #f19149;
+    }
+
+    ul.navi > li {
+        display: inline-block;
+        margin: 0 1.2em;
+    }
+    
+    ul.social > li {
+        display: inline-block;
     }
 </style>
 

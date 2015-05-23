@@ -3,70 +3,121 @@ html, body {
     height: 100%;
 }
 
-section {
-    min-height: 100%;
-}
-
 .row {
     min-width: 100%;
     margin: 0;
     padding: 0;
-
-    min-height: 100%;
 }
 
-section > div.row > div.columns {
-    width: 100%;
-}
-
-/* --- */
-section > div.row > div.columns {
-    padding: 1.5em;
-}
-
-section > div.row > div.columns.chapter {
-    /*
-    height: 100%;
-    */
-}
-
-section > div.row > div.columns.content {
-    /*
-    min-height: 100%;
-    */
+div.row > div.columns h1 {
+    text-align: center;
 }
 
 /* --- */
-section > div.row > div.columns.chapter > h1 {
-    /*
+div.row > div.columns {
+    padding: 1rem;
+}
+
+div.row > div.columns.chapter {
+
+}
+
+div.row > div.columns.content {
+    background: #fff;
+}
+
+/* --- */
+div.row > div.columns.chapter > h1 {
     color: #fff;
-    */
+}
+
+div.row.title > div.columns {
+    display: none;
+    padding: 0;
+}
+
+div.row.title > div.columns > * {
+    text-align: center;
 }
 
 /* --- */
-section.title > div.row > div.columns {
+div.row.title {
     background: #4abde2;
+    height: 100%;
 }
 
-section.about > div.row {
+div.row.about {
     background: #41a069;
 }
 
-section.work > div.row {
+div.row.about table,
+div.row.about th,
+div.row.about tr,
+div.row.about td {
+    border: none;
+}
+
+div.row.works {
     background: #e46565;
 }
 
-section.contact > div.row {
+div.row.contact {
     background: #f19149;
 }
 
+div.row.contact iframe {
+    width: 100%;
+    height: 100%;
+}
+
 /* --- */
+ul.navi {
+    margin-top: 5%;
+}
+
 ul.navi > li {
     display: inline-block;
     margin: 0 1.2em;
 }
 
+ul.navi > li > a {
+    color: #444444;
+    font-weight: bold;
+}
+
+/* --- */
+ul.social {
+    margin-top: 5rem;
+}
+
 ul.social > li {
     display: inline-block;
     margin: 0 1.2em;
+}
+
+ul.social > li a {
+    color: #000;
+    zoom: 2;
+}
+
+.allow {
+    margin: 0 auto;
+    border-right: 2px solid #444444;
+    border-top: 2px solid #444444;
+    content: "";
+    height: 40px;
+    transform: rotate(135deg);
+    width: 40px;
+}
+
+div.row.about h1,
+div.row.works h1,
+div.row.contact h1 {
+    font-size: 3rem;
+}
+
+div.row.about h2,
+div.row.works h2,
+div.row.contact h2 {
+    font-size: 2rem;
 }

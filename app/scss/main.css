@@ -1,0 +1,62 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+section,
+section > div.row,
+section > div.row > div.columns {
+
+}
+
+
+select > div.row > div.columns > div.columns {
+    height: 100%;
+}
+
+section, div.row {
+    padding: 0;
+}
+*/
+
+section.title > div.row > div.columns {
+    background: #4abde2;
+}
+
+section.about > div.row > div.columns {
+    background: #41a069;
+}
+
+section.work > div.row > div.columns {
+    background: #e46565;
+}
+
+section.contact > div.row > div.columns {
+    background: #f19149;
+}
+
+section > div.row > div.columns > div.columns {
+    padding: 1.5em;
+}
+
+section > div.row > div.columns > div.columns.content {
+    background: #fff;
+}
+
+ul.navi > li {
+    display: inline-block;
+    margin: 0 1.2em;
+}
+
+ul.social > li {
+    display: inline-block;
+    margin: 0 1.2em;
+}

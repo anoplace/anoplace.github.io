@@ -3,54 +3,64 @@ html, body {
     height: 100%;
 }
 
+section {
+    min-height: 100%;
+}
+
 .row {
     min-width: 100%;
     margin: 0;
     padding: 0;
+
+    min-height: 100%;
 }
 
-
-/*
-section,
-section > div.row,
 section > div.row > div.columns {
-
+    width: 100%;
 }
 
+/* --- */
+section > div.row > div.columns {
+    padding: 1.5em;
+}
 
-select > div.row > div.columns > div.columns {
+section > div.row > div.columns.chapter {
+    /*
     height: 100%;
+    */
 }
 
-section, div.row {
-    padding: 0;
+section > div.row > div.columns.content {
+    /*
+    min-height: 100%;
+    */
 }
-*/
 
+/* --- */
+section > div.row > div.columns.chapter > h1 {
+    /*
+    color: #fff;
+    */
+}
+
+/* --- */
 section.title > div.row > div.columns {
     background: #4abde2;
 }
 
-section.about > div.row > div.columns {
+section.about > div.row {
     background: #41a069;
 }
 
-section.work > div.row > div.columns {
+section.work > div.row {
     background: #e46565;
 }
 
-section.contact > div.row > div.columns {
+section.contact > div.row {
     background: #f19149;
 }
 
-section > div.row > div.columns > div.columns {
-    padding: 1.5em;
-}
-
-section > div.row > div.columns > div.columns.content {
-    background: #fff;
-}
-
+/* --- */
 ul.navi > li {
     display: inline-block;
     margin: 0 1.2em;

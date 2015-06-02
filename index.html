@@ -50,10 +50,10 @@
 
     <!-- We highly recommend you use SASS and write your custom styles in sass/_custom.scss.
          However, there is a blank style.css in the css directory should you prefer -->
-    <link rel="stylesheet" href="./bower_components/gumby/css/gumby.css">
+    <link rel="stylesheet" href="/bower_components/gumby/css/gumby.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
 
-    <script src="./bower_components/gumby/js/libs/modernizr-2.6.2.min.js"></script>
+    <script src="/bower_components/gumby/js/libs/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
 
@@ -65,9 +65,6 @@
 
         <ul class="navi">
             <li><a href="about">ABOUT</a></li>
-            <!--
-            <li><a href="works">WORKS</a></li>
-            -->
             <li><a href="contact">CONTACT</a></li>
         </ul>
 
@@ -103,7 +100,7 @@
 
             <h2>Taisei Watanabe</h2>
 
-            <p>Director / Producer / Interactive Hardware Engineer</p>
+            <p>CEO / Director / Interaction Designer</p>
 
             <h2>Hironori Sugino</h2>
 
@@ -118,7 +115,7 @@
             <table>
                 <tr>
                     <td>住所</td>
-                    <td>〒156-0041<br/>東京都世田谷区大原1-5-22<br/>SO1522 104号室</td>
+                    <td>〒151-0051<br/>東京都渋谷区千駄ヶ谷4丁目23-5<br/>JPR千駄ヶ谷ビル5F</td>
                 </tr>
                 <tr>
                     <td>代表取締役</td>
@@ -134,55 +131,23 @@
                 </tr>
                 <tr>
                     <td>資本金</td>
-                    <td>100万円</td>
+                    <td>300万円</td>
                 </tr>
             </table>
         </div>
     </div>
 </div>
 
-<!--
-<div class="row works">
-    <div class="four columns chapter">
-        <h1>WORKS</h1>
-    </div>
-    <div class="eight columns content">
-        <p>works</p>
-
-        <p>works</p>
-
-        <p>works</p>
-
-        <p>works</p>
-
-        <p>works</p>
-
-        <p>works</p>
-
-        <p>works</p>
-
-        <p>works</p>
-
-        <p>works</p>
-
-        <p>works</p>
-
-        <p>works</p>
-    </div>
-</div>
--->
-
 <div class="row contact">
     <div class="four columns chapter">
         <h1>CONTACT</h1>
     </div>
     <div class="eight columns content">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.400969191027!2d139.66428025!3d35.667127750000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f313c1ea2cf3%3A0x4846aeb4204aa80f!2z5pel5pysLCDjgJIxNTYtMDA0MSDmnbHkuqzpg73kuJbnlLDosLfljLrlpKfljp_vvJHkuIHnm67vvJXiiJLvvJLvvJIg77yz77yv77yR77yV77yS77yS!5e0!3m2!1sja!2s!4v1432152802161" frameborder="0"></iframe>
+        <iframe src="https://maps.google.co.jp/maps?f=q&source=s_q&hl=ja&geocode=&q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E5%8D%83%E9%A7%84%E3%83%B6%E8%B0%B74-23-5&aq=&sll=35.68137,139.704355&sspn=0.012689,0.024269&brcurrent=3,0x60188cc75a85694f:0x4b26345178882d6a,0&ie=UTF8&hq=&hnear=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E5%8D%83%E9%A7%84%E3%83%B6%E8%B0%B7%EF%BC%94%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%93%E2%88%92%EF%BC%95&t=m&ll=35.680934,139.706783&spn=0.0198,0.036993&z=14&iwloc=A&output=embed&iwloc=B" frameborder="0"></iframe>
 
         <h2>anoplace</h2>
 
-        <p>〒156-0041<br/>東京都世田谷区大原1-5-22 SO1522 104号室<br/>
-            JR山手線渋谷駅 東口から徒歩5分<br/>
+        <p>〒151-0051<br/>東京都渋谷区千駄ヶ谷4丁目23-5<br/>JPR千駄ヶ谷ビル5F<br/>
             info@ano-place.com
         </p>
 
@@ -214,7 +179,7 @@
         </ul>
 
         <div class="row">
-            <div class="large danger btn"><a href="#">送信する</a></div>
+            <div class="large danger btn"><a href="#" id="mail_send">送信する</a></div>
         </div>
 
         <div class="row">
@@ -225,11 +190,16 @@
             </ul>
         </div>
 
-        <p>&copy;anyplace Inc. All Rights Reserved.</p>
+        <p>&copy;anoplace Inc. All Rights Reserved.</p>
     </div>
 </div>
 
-<link rel="stylesheet" href="./app/scss/main.css">
+<!--
+参考サイト
+http://melaniedaveid.com/
+-->
+
+<link rel="stylesheet" href="/app/scss/main.css">
 
 
 <!-- Grab Google CDN's jQuery, fall back to local if offline -->
@@ -245,9 +215,9 @@
 <script>
     if (!window.jQuery) {
         if (!oldieCheck) {
-            document.write('<script src="./bower_components/gumby/js/libs/jquery-2.0.2.min.js"><\/script>');
+            document.write('<script src="/bower_components/gumby/js/libs/jquery-2.0.2.min.js"><\/script>');
         } else {
-            document.write('<script src="./bower_components/gumby/js/libs/jquery-1.10.1.min.js"><\/script>');
+            document.write('<script src="/bower_components/gumby/js/libs/jquery-1.10.1.min.js"><\/script>');
         }
     }
 </script>
@@ -255,17 +225,17 @@
 <!--
 Include gumby.js followed by UI modules followed by gumby.init.js
 Or concatenate and minify into a single file -->
-<script gumby-touch="./bower_contents/gumby/js/libs" src="./bower_components/gumby/js/libs/gumby.js"></script>
-<script src="./bower_components/gumby/js/libs/ui/gumby.retina.js"></script>
-<script src="./bower_components/gumby/js/libs/ui/gumby.fixed.js"></script>
-<script src="./bower_components/gumby/js/libs/ui/gumby.skiplink.js"></script>
-<script src="./bower_components/gumby/js/libs/ui/gumby.toggleswitch.js"></script>
-<script src="./bower_components/gumby/js/libs/ui/gumby.checkbox.js"></script>
-<script src="./bower_components/gumby/js/libs/ui/gumby.radiobtn.js"></script>
-<script src="./bower_components/gumby/js/libs/ui/gumby.tabs.js"></script>
-<script src="./bower_components/gumby/js/libs/ui/gumby.navbar.js"></script>
-<script src="./bower_components/gumby/js/libs/ui/jquery.validation.js"></script>
-<script src="./bower_components/gumby/js/libs/gumby.init.js"></script>
+<script gumby-touch="/bower_contents/gumby/js/libs" src="/bower_components/gumby/js/libs/gumby.js"></script>
+<script src="/bower_components/gumby/js/libs/ui/gumby.retina.js"></script>
+<script src="/bower_components/gumby/js/libs/ui/gumby.fixed.js"></script>
+<script src="/bower_components/gumby/js/libs/ui/gumby.skiplink.js"></script>
+<script src="/bower_components/gumby/js/libs/ui/gumby.toggleswitch.js"></script>
+<script src="/bower_components/gumby/js/libs/ui/gumby.checkbox.js"></script>
+<script src="/bower_components/gumby/js/libs/ui/gumby.radiobtn.js"></script>
+<script src="/bower_components/gumby/js/libs/ui/gumby.tabs.js"></script>
+<script src="/bower_components/gumby/js/libs/ui/gumby.navbar.js"></script>
+<script src="/bower_components/gumby/js/libs/ui/jquery.validation.js"></script>
+<script src="/bower_components/gumby/js/libs/gumby.init.js"></script>
 
 <!--
 Google's recommended deferred loading of JS
@@ -289,8 +259,8 @@ window.attachEvent("onload", downloadJSAtOnload);
 else window.onload = downloadJSAtOnload;
 </script> -->
 
-<script src="./bower_components/gumby/js/plugins.js"></script>
-<script src="./bower_components/gumby/js/main.js"></script>
+<script src="/bower_components/gumby/js/plugins.js"></script>
+<script src="/bower_components/gumby/js/main.js"></script>
 
 <!-- Change UA-XXXXX-X to be your site's ID -->
 <!--<script>
@@ -330,6 +300,11 @@ Modernizr.load({
             var p = $('div.row.' + $anchor.attr('href')).offset().top;
             $('html,body').animate({scrollTop: p}, 'normal');
             return false;
+        });
+
+        $('#mail_send').click(function() {
+          alert('mail server not found');
+          return false;
         });
     });
 </script>
